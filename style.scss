@@ -70,14 +70,55 @@ body {
     text-align: center;
 }
 .header {
+    margin-bottom: 100px;
     .logo {
         font-size: 3rem;
         color: #fff;
     }
 }
+#city {
+    background-color: transparent;
+    width: 50%;
+    max-width: 300px;
+    border: 0;
+    color: #fff;
+    font-size: 2rem;
+    border-bottom: 2px solid #888;
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+.search {
+    bottom: 0;
+    border: 0;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background:url('/src/assets/search.png')no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
 .result-wrap {
-    
-    #result {}
+    .info-wrap {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    .info-box {
+        margin-bottom: 20px;
+        span {
+            display: block;
+            font-size: 1.2rem;
+        }
+        em {
+            font-size: 1.5rem;
+        }
+    }
+    #result {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
     #feel-temp {}
     #temp {}
 }
